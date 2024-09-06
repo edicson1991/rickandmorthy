@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Rick y Morty, personajes, series animadas, ciencia ficción" />
+  <meta name="description"
+    content="Página web sobre personajes de Rick y Morty, con información detallada sobre cada uno de ellos." />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Personajes de Rick y Morty - Información Completa</title>
+</head>
+
+<body>
+  <header class="wrap">
+    <nav>
+      <img src="./assets/imagens/Logo-reto.svg" alt="Logo sitio web Rick and Morthy" />
+      <input type="search" placeholder="Buscar personajes" id="search" />
+    </nav>
+  </header>
+  <main class="wrap">
+    <seccion>
+      <div class="hero-banner parallax">
+        <h1>Explora el Multiverso de Rick y Morty</h1>
+        <p>Explora el multiverso de Rick y Morty y descubre detalles fascinantes de tus personajes favoritos. Desde Rick
+          hasta Morty, conoce sus historias y aventuras en esta increíble serie animada.</p>
+      </div>
+    </seccion>
+    <section class="seccion-title-text">
+      <div class="seccion-title__text-sc">
+        <h2>Encuentra tu personaje favorito</h2>
+         <p id="pageNumber"></p>
+      </div>
+      
+
+      <div class="hero-card" id="seccion-card">
+        <article class="hero-card__items"></article>
+      </div>
+
+      <div class="box-button">
+        <button class="btn box-button__prev" id="prevPage">Anterior</button>
+        <button class="btn box-button__next" id="nextPage">Siguiente</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Desarrollado by <a href="#">Edicson Hurtado</a></p>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
