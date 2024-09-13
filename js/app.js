@@ -12,7 +12,7 @@ const nextButton = document.getElementById("nextPage");
 const pageNumberElement = document.getElementById("pageNumber");
 const searchInput = document.getElementById("search");
 
-// Función para cargar personajes con soporte para búsqueda y paginación
+// Función para cargar personajes 
 function fetchCharacters(url) {
     fetchData(url).then((data) => {
         const limitedResults = data.results.slice(0, 8); // Mostrar 8 resultados como límite
@@ -22,7 +22,7 @@ function fetchCharacters(url) {
     });
 }
 
-// Manejador del input de búsqueda
+//Buscador
 searchInput.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();
     currentSearchQuery = query; // Guardar la búsqueda
@@ -34,7 +34,7 @@ searchInput.addEventListener('input', (e) => {
     }
 });
 
-// Paginación con soporte para búsqueda
+// Paginación 
 prevButton.addEventListener("click", () => {
     const prevPageUrl = prevButton.getAttribute("data-url");
     if (prevPageUrl) {
@@ -51,5 +51,4 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-// Cargar la primera página
 fetchCharacters(currentPageUrl);
