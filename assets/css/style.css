@@ -56,7 +56,7 @@ header {
   top: 2rem;
   box-shadow: 0px 3px 15px #bae23e;
   z-index: 1000;
-
+  width: 88%;
 }
 
 header img {
@@ -123,6 +123,7 @@ footer {
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding: 1rem;
 }
 
 .hero-card {
@@ -182,7 +183,7 @@ footer {
   background: url("https://img.icons8.com/doodle/48/search--v1.png") no-repeat 0px 5px;
   background-size: 30px;
   color: #ffffff;
-  width: 500px;
+  width: 25rem;
   border: transparent;
   border-bottom: solid 1px #bae23e;
   padding: 10px 10px 10px 30px;
@@ -199,7 +200,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   
   h2 {
@@ -245,7 +246,14 @@ footer {
   .parallax {
     background-size: 70%; 
   }
+  #search {
+    width: 100%;   
+  }
+  
 }
+
+
+
 
 @media screen and (max-width: 400px) {
   h1 {
@@ -294,6 +302,6 @@ footer {
     
   }
   #search {
-    width: 90%;   
+    width: 100%;   
   }
 }
